@@ -1,0 +1,11 @@
+<h1>Your shortened Url</h1>
+<br>
+<input type="text" value="{{short_url.newurl}}" id="shortresult">
+<button type="button" onclick="toClipboard()">Copy to clipboard</button>
+<script>
+    function toClipboard(){
+        document.getElementById("shortresult").select();
+        document.execCommand("copy");
+        alert("Copied to clipboard!");
+    }
+</script>

@@ -2,16 +2,20 @@
   "name": "urlshort",
   "version": "1.0.0",
   "description": "simple url shortener",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon index.js"
+    "start": "nodemon server.js"
   },
   "keywords": [],
   "author": "Rafael Zaccaro",
   "license": "ISC",
   "devDependencies": {
+    "bootstrap": "^5.0.2",
     "express": "^4.17.1",
+    "express-handlebars": "^5.3.2",
+    "mongodb": "^4.0.0",
     "nodemon": "^2.0.12"
-  }
+  },
+  "dependencies": {}
 }
