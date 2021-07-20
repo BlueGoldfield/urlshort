@@ -15,7 +15,7 @@ MongoClient.connect(connectionString, (err, client) => {
     const db = client.db('short-urls')
     const urlCollection = db.collection('urls')
 
-    app.use(express.urlencoded())
+    app.use(express.urlencoded({ extended: true }))
 
     app.get("/", (req, res) => {
         //res.sendFile(__dirname + '/public/index.html')
