@@ -11,11 +11,12 @@
   "author": "Rafael Zaccaro",
   "license": "ISC",
   "devDependencies": {
+    "nodemon": "^2.0.12"
+  },
+  "dependencies": {
     "bootstrap": "^5.0.2",
     "express": "^4.17.1",
     "express-handlebars": "^5.3.2",
-    "mongodb": "^4.0.0",
-    "nodemon": "^2.0.12"
-  },
-  "dependencies": {}
+    "mongodb": "^4.0.0"
+  }
 }
