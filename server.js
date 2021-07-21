@@ -17,6 +17,8 @@ MongoClient.connect(connectionString, (err, client) => {
 
     app.use(express.urlencoded({ extended: true }))
 
+    updateUrls()
+
     app.get("/", (req, res) => {
         //res.sendFile(__dirname + '/public/index.html')
         res.render('home')
